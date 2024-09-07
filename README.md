@@ -1,0 +1,1 @@
+# Veritiplerini_Kontrol_Et
