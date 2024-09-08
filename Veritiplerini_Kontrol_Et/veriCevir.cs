@@ -37,7 +37,7 @@ namespace Veritiplerini_Kontrol_Et
         private void radio1_MouseClick(object sender, MouseEventArgs e)
         {
             sqlServerList.Enabled = true;
-            sqlServerList.SelectedIndex = 0;
+            
         }
 
         private void radio1_CheckedChanged(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace Veritiplerini_Kontrol_Et
         private void radio2_MouseClick(object sender, MouseEventArgs e)
         {
             clrSqlServerList.Enabled = true;
-            sqlServerList.SelectedIndex = 0;
+            
         }
 
         private void radio2_CheckedChanged(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Veritiplerini_Kontrol_Et
         private void radio3_MouseClick(object sender, MouseEventArgs e)
         {
             clrNetFList.Enabled = true;
-            sqlServerList.SelectedIndex = 0;
+            
         }
 
         private void radio3_CheckedChanged(object sender, EventArgs e)
@@ -75,8 +75,6 @@ namespace Veritiplerini_Kontrol_Et
             
             if (radio1.Checked == true)
             {
-                
-
                 sbyte stages = Convert.ToSByte(sqlServerList.SelectedIndex);
                 if (stages == 0)
                 {
@@ -90,7 +88,46 @@ namespace Veritiplerini_Kontrol_Et
 
                 }
             }
+
+            if (radio2.Checked == true)
+            {
+                sbyte stages = Convert.ToSByte(clrSqlServerList.SelectedIndex);
+                if (stages == 0)
+                {
+                    sqlServerList.SelectedIndex = 0;
+                    clrNetFList.SelectedIndex = 0;
+                }
+                for (sbyte x = 1; x <= stages; x++)
+                {
+                    sqlServerList.SelectedIndex = x;
+                    clrNetFList.SelectedIndex = x;
+
+                }
+            }
+
+            if (radio3.Checked == true)
+            {
+                sbyte stages = Convert.ToSByte(clrNetFList.SelectedIndex);
+                if (stages == 0)
+                {
+                    sqlServerList.SelectedIndex = 0;
+                    clrSqlServerList.SelectedIndex = 0;
+                }
+                for (sbyte x = 1; x <= stages; x++)
+                {
+                    sqlServerList.SelectedIndex = x;
+                    clrSqlServerList.SelectedIndex = x;
+
+                }
+            }
+
             
+        }
+
+        private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            hangiVeri veriform = new hangiVeri();
+            veriform.Show();
         }
     }
 }

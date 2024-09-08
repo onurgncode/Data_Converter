@@ -44,14 +44,12 @@
             this.veriÇevirmeAracıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.radio3);
             this.groupBox1.Controls.Add(this.radio2);
             this.groupBox1.Controls.Add(this.radio1);
@@ -265,16 +263,12 @@
             // 
             this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
             resources.ApplyResources(this.hakkımızdaToolStripMenuItem, "hakkımızdaToolStripMenuItem");
+            this.hakkımızdaToolStripMenuItem.Click += new System.EventHandler(this.hakkımızdaToolStripMenuItem_Click);
             // 
             // hakkımızdaToolStripMenuItem1
             // 
             this.hakkımızdaToolStripMenuItem1.Name = "hakkımızdaToolStripMenuItem1";
             resources.ApplyResources(this.hakkımızdaToolStripMenuItem1, "hakkımızdaToolStripMenuItem1");
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // veriCevir
             // 
@@ -313,7 +307,6 @@
         private System.Windows.Forms.RadioButton radio2;
         private System.Windows.Forms.RadioButton radio1;
         private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem1;
-        private System.Windows.Forms.Label label4;
     }
 }
 
