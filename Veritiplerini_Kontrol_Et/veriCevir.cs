@@ -129,5 +129,15 @@ namespace Veritiplerini_Kontrol_Et
             hangiVeri veriform = new hangiVeri();
             veriform.Show();
         }
+
+        private void hakkımızdaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu Program Yazılımcıların işini daha da kolaylaştırsın diye düşünmüş bir programdır","İleti",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

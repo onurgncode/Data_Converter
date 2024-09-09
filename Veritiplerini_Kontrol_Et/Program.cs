@@ -16,7 +16,7 @@ namespace Veritiplerini_Kontrol_Et
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new hangiVeri());
+            Application.Run(new veriCevir());
         }
     }
 }

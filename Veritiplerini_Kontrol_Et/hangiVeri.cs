@@ -15,10 +15,14 @@ namespace Veritiplerini_Kontrol_Et
     {
         public void banaveriver(string veri)
         {
+
+
+
+            /*
             if (veri == "1")
                 if (harfTik.Checked == true)
                     textBox1.Text = "Veri tipi: Char";
-                else if (eksiSayiTik.Checked == true)
+                else if (eksiSayiTik.Checked == true && radioVirgul.Checked == false)
                     textBox1.Text = "Veri tipi: sByte";
                 else if (radioVirgul.Checked == true)
                     textBox1.Text = "Veri tipi: float";
@@ -27,13 +31,23 @@ namespace Veritiplerini_Kontrol_Et
             else if (veri == "1-100")
                 if (harfTik.Checked == true)
                     textBox1.Text = "Veri tipi: String";
+                else if (radioVirgul.Checked == true)
+                    textBox1.Text = "Veri tipi: float";
                 else if (sayiTik.Checked == true)
                     textBox1.Text = "Veri tipi: Byte";
+                else if (zamanTik.Checked == true)
+                    textBox1.Text = "Veri tipi: DateTime";
+            else if (veri = "100")
+                    if ()
+            if (radioİki.Checked == true)
+                    textBox1.Text = "Veri tipi: bool";
+            */
         }
         public hangiVeri()
         {
             InitializeComponent();
             MaximizeBox = false;
+            
         }
 
         private void hangiVeri_Load(object sender, EventArgs e)
@@ -203,6 +217,11 @@ namespace Veritiplerini_Kontrol_Et
             radioİki.Enabled = true;
             eksiSayiTik.Enabled = true;
             eksiSayiTik.Checked = false;
+        }
+
+        private void hakkımızdaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu Program Yazılımcıların işini daha da kolaylaştırsın diye düşünmüş bir programdır", "İleti", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

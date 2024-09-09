@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hangiVeri));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.veriÇevirmeAracıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +47,7 @@
             this.eksiSayiTik = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.sayiAl = new System.Windows.Forms.ComboBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(361, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(706, 25);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,6 +83,7 @@
             this.hakkımızdaToolStripMenuItem1.Name = "hakkımızdaToolStripMenuItem1";
             this.hakkımızdaToolStripMenuItem1.Size = new System.Drawing.Size(81, 19);
             this.hakkımızdaToolStripMenuItem1.Text = "Hakkımızda";
+            this.hakkımızdaToolStripMenuItem1.Click += new System.EventHandler(this.hakkımızdaToolStripMenuItem1_Click);
             // 
             // label1
             // 
@@ -161,6 +164,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(15, 368);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 40);
@@ -207,6 +211,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(225, 368);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 40);
@@ -234,12 +239,21 @@
             this.sayiAl.TabIndex = 17;
             this.sayiAl.Text = "Seçiniz";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(377, 38);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(317, 294);
+            this.richTextBox1.TabIndex = 18;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
             // hangiVeri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(361, 420);
+            this.ClientSize = new System.Drawing.Size(706, 420);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.sayiAl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.eksiSayiTik);
@@ -289,5 +303,6 @@
         private System.Windows.Forms.CheckBox eksiSayiTik;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox sayiAl;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

@@ -120,4 +120,55 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Değer Tipleri
+Değer tipleri, değişkenlerin kendisinin doğrudan veri içerdiği tiplerdir. Bunlar genellikle hafıza yığınında (stack) depolanır.
+
+Tam Sayılar:
+
+int : 4 byte, -2,147,483,648 ile 2,147,483,647 arasında değerler alabilir.
+long : 8 byte, -9,223,372,036,854,775,808 ile 9,223,372,036,854,775,807 arasında değerler alabilir.
+short : 2 byte, -32,768 ile 32,767 arasında değerler alabilir.
+byte : 1 byte, 0 ile 255 arasında değerler alabilir.
+sbyte : 1 byte, -128 ile 127 arasında değerler alabilir.
+uint : 4 byte, 0 ile 4,294,967,295 arasında değerler alabilir.
+ulong : 8 byte, 0 ile 18,446,744,073,709,551,615 arasında değerler alabilir.
+ushort : 2 byte, 0 ile 65,535 arasında değerler alabilir.
+Ondalık Sayılar:
+
+float : 4 byte, yaklaşık ±1.5 x 10^−45 ile ±3.4 x 10^38 arasında değerler alabilir.
+double : 8 byte, yaklaşık ±5.0 x 10^−324 ile ±1.7 x 10^308 arasında değerler alabilir.
+decimal : 16 byte, ±1.0 x 10^−28 ile ±7.9 x 10^28 arasında değerler alabilir (finansal ve para hesaplamaları için daha hassas bir tip).
+Karakter ve Boolean:
+
+char : 2 byte, tek bir Unicode karakteri temsil eder (0 ile 65,535 arasında).
+bool : 1 byte, true veya false değerlerini alabilir.
+Diğer Değer Tipleri:
+
+struct : Kullanıcı tanımlı yapılar (örneğin, DateTime, TimeSpan).
+Referans Tipleri
+Referans tipleri, değişkenlerin veri yerine bir referans (işaretçi) içerdiği tiplerdir. Bunlar genellikle heap (yığın) üzerinde depolanır.
+
+String:
+
+string : Karakter dizileri için kullanılır, UTF-16 kodlaması kullanılır.
+Dizi:
+
+array : Aynı türden öğelerin sıralı koleksiyonlarıdır (örneğin, int[], string[]).
+Sınıflar:
+
+class : Kullanıcı tanımlı sınıflar, nesne tabanlı programlamada kullanılır.
+Arayüzler:
+
+interface : Bir sınıfın uygulaması gereken yöntemler ve özellikler kümesini tanımlar.
+Delegeler:
+
+delegate : Yöntem referanslarını kapsayan türlerdir ve olay işleme veya yöntem çağırma gibi senaryolar için kullanılır.
+Nesneler:
+
+object : Tüm veri tiplerinin temel sınıfıdır, tüm referans tipleri ve değer tipleri object türünden türetilmiştir.
+Koleksiyonlar:
+
+List&lt;T&gt;, Dictionary&lt;TKey, TValue&gt;, HashSet&lt;T&gt; gibi türler, dinamik veri yapılarını temsil eder.</value>
+  </data>
 </root>
